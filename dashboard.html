@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">
+                    <span class="fa-gradient">
+                        <i class="fas fa-wallet"></i> Expense Tracker
+                    </span>
+                </h1>
+                <ul>
+                    <li><a href="#">About Developer</a></li>
+                    <li><a href="#">Username, Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert -->
+
+    <!--                         
+        Success :- <i class="fas fa-check-circle"></i>
+        Info :- <i class="fas fa-info-circle"></i>
+        Warning :- <i class="fas fa-exclamation-circle"></i>  
+        Danger :- <i class="fas fa-exclamation-circle"></i>  
+    -->
+
+    <!-- <section id="alert">
+        <div class="container">
+            <div class="alert alert-success">
+                <div class="alert-content">
+                    <div class="alert-text">
+
+                        <i class="fas fa-check-circle"></i>
+                        &nbsp;
+                        User Registration Successfull.
+                        &emsp;&emsp;
+                        <a href="#" class="alert-cross"> <i class="fas fa-times"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section> -->
+
+    <section>
+        <div class="container">
+            <div class="transaction">
+                <div class="add-transaction">
+                    <h1 class="heading">Add Transaction</h1>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="text"><i class="fas fa-clipboard"></i></label>
+                            <input type="text" name="text" id="text" placeholder="Enter text..." value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="money"><i class="fas fa-money-bill"></i></label>
+                            <input type="number" name="amount" id="amount" placeholder="Enter amount..." value="">
+                            <p>(negative - expense, positive - income)</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn" value="Add Transaction">
+                        </div>
+                    </form>
+                    <p> You are not logged in, <br> your data will be stored in browser. </p>
+                </div>
+                <div class="show-transaction">
+                    
+                    <div class="show-balance">
+                        <h1 class="heading">Status</h1>
+                        <!-- <div class="balance-card-shimmer">
+                            <br><br><br>
+                        </div> -->
+                        
+                        <div class="balance-card"> 
+                            <div class="summary balance"> 
+                                <span class="title"> Balance </span>
+                                <span class="amount"> $12345 </span>
+                            </div> 
+
+                            <div class="summary income">
+                                <span class="title"> Income </span>
+                                <span class="amount"> $12345 </span>
+                            </div>
+                            <div class="summary expense"> 
+                                <span class="title"> Expense </span>
+                                <span class="amount"> $12345 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-history">
+                        <div class="show-balance">
+                            <h1 class="heading">History</h1>
+                            
+                            <!-- <div class="history-card-shimmer">
+                                <br>
+                            </div>
+                            <div class="history-card-shimmer">
+                                <br>
+                            </div>
+                            <div class="history-card-shimmer">
+                                <br>
+                            </div> -->
+
+                            <div class="history-card">
+                                <div class="holder"> 
+                                    <div class="tag tag-red"></div> 
+                                    <div class="title">Expense</div> 
+                                </div>
+                                <div class="holder"> 
+                                    <div class="amount"> $12345 </div>
+                                    <div class="delete"><a href="#"><i class="fas fa-times"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="history-card">
+                                <div class="holder"> 
+                                    <div class="tag tag-green"></div> 
+                                    <div class="title">Income</div> 
+                                </div>
+                                <div class="holder"> 
+                                    <div class="amount"> $12345 </div>
+                                    <a class="delete" href="#"><i class="fas fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="history-card">
+                                <div class="holder"> 
+                                    <div class="tag tag-red"></div> 
+                                    <div class="title">Expense</div> 
+                                </div>
+                                <div class="holder"> 
+                                    <div class="amount"> $12345 </div>
+                                    <div class="delete"><a href="#"><i class="fas fa-times"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="history-card">
+                                <div class="holder"> 
+                                    <div class="tag tag-green"></div> 
+                                    <div class="title">Income</div> 
+                                </div>
+                                <div class="holder"> 
+                                    <div class="amount"> $12345 </div>
+                                    <a href="#" class="delete"><i class="fas fa-times"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
